@@ -26,68 +26,12 @@
       font-size: 2.5rem;
       background-color: transparent;
     }
-
-    .btn-53,
-    .btn-53 *,
-    .btn-53::after,
-    .btn-53::before {
-      box-sizing: border-box;
-      border: 0;
+    .btn:hover {
+      background-color: rgba(245, 222, 179, 0.171);
     }
 
-    .btn-53 {
-      border: 1px solid;
-      border-radius: 999px;
-      background-color: #000;
-      color: #fff;
-      font-weight: 900;
-      text-transform: uppercase;
-      padding: 1.2rem 3rem;
-      overflow: hidden;
-      position: relative;
-      display: inline-block;
-      cursor: pointer;
-    }
 
-    .btn-53 .original {
-      background: #fff;
-      color: #000;
-      position: absolute;
-      inset: 0;
-      height: 100%;
-      display: grid;
-      place-content: center;
-      transition: transform 0.3s ease;
-    }
 
-    .btn-53:hover .original {
-      transform: translateY(100%);
-    }
-
-    .btn-53 .letters {
-      display: inline-flex;
-    }
-
-    .btn-53 span {
-      opacity: 0;
-      transform: translateY(-15px);
-      transition: transform 0.3s ease, opacity 0.3s;
-    }
-
-    .btn-53 span:nth-child(2n) {
-      transform: translateY(15px);
-    }
-
-    .btn-53:hover span {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .btn-53:hover span:nth-child(2) { transition-delay: 0.1s; }
-    .btn-53:hover span:nth-child(3) { transition-delay: 0.2s; }
-    .btn-53:hover span:nth-child(4) { transition-delay: 0.3s; }
-    .btn-53:hover span:nth-child(5) { transition-delay: 0.4s; }
-    .btn-53:hover span:nth-child(6) { transition-delay: 0.5s; }
   </style>
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -141,16 +85,8 @@
         placeholder="Enter city..." 
         class="w-[80%] rounded-[10px] p-2 outline-none text-black mb-[-5%]"
       >
-      <button id="searchBtn" class="btn-53 w-[100%] md:w-[80%] md:mt-10 sm:mt-10 ld:w-[100%] ld:mt-15 text-center h-[10vh] mt-8">
-        <div class="original">SEARCH CITY</div>
-        <div class="letters text-center">
-          <span>S</span>
-          <span>U</span>
-          <span>B</span>
-          <span>M</span>
-          <span>I</span>
-          <span>T</span>
-        </div>
+      <button id="searchBtn" class="btn w-[80%] h-[8vh] border rounded md:w-[60%] md:mt-[10%] sm:mt-10 sm:w-[60%] ld:w-[100%] ld:mt-15 text-center mt-10">
+        SEARCH CITY
       </button>
     </div>
   </main>
@@ -158,6 +94,7 @@
   <script src="j.js"></script>
 </body>
 </html>
+
 
 
 
