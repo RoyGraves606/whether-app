@@ -107,7 +107,7 @@
 </head>
 
 <body class="flex items-center justify-center bg-[linear-gradient(120deg,#4f46e5,#ec4899)] h-screen w-full font-mono">
-  <main class="w-1/2 h-[80%] rounded-[25px] bg-blr backdrop-blur-md shadow-lg border border-white/20 p-6 text-white">
+  <main class="w-[80%] h-[85%] flex-shrink-0 m-auto md:w-[50%] sm:w-[60%] ld:w-[40%] rounded-[25px] bg-blr  backdrop-blur-md shadow-lg border border-white/20 p-6 text-white">
     <div id="location-cont" class="text-center p-5">
       <span id="location" class="uppercase text-2xl font-semibold tracking-wider">Puducherry</span>
       <span id="date" class="block text-sm opacity-80 mt-1">29 Oct 2025</span>
@@ -132,18 +132,18 @@
       </span>
     </div>
 
-    <hr class="border-white/30 mb-6" />
+    <hr class="border-white/30 mb-5" />
 
     <div id="inputs" class="input relative flex flex-col justify-center items-center">
       <input 
       id="city"
         type="text" 
         placeholder="Enter city..." 
-        class="w-[80%] rounded-[10px] p-2 outline-none text-black"
+        class="w-[80%] rounded-[10px] p-2 outline-none text-black mb-[-5%]"
       >
-      <button id="searchBtn" class="btn-53 w-[80%] mt-5">
+      <button id="searchBtn" class="btn-53 w-[100%] md:w-[80%] md:mt-10 sm:mt-10 ld:w-[100%] ld:mt-15 text-center h-[10vh] mt-8">
         <div class="original">SEARCH CITY</div>
-        <div class="letters">
+        <div class="letters text-center">
           <span>S</span>
           <span>U</span>
           <span>B</span>
@@ -158,3 +158,5 @@
   <script src="j.js"></script>
 </body>
 </html>
+
+
